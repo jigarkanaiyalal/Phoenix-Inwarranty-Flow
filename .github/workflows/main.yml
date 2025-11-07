@@ -34,19 +34,17 @@ jobs:
              newman run 'Inwarrnty-flow collection Copy.postman_collection.json' /
              -e QA.postman_environment.json /
              -r cli,htmlextra
-             
-      - name: Upload Newman Report
-        uses: actions/upload-artifact@v4
-        with:
-           name: newman-report  
-           path: newman/report.html
-           
-      - name: Download Newman Report
+
+      - name: Newman Report
         if: always()
-        uses: actions/download-artifact@v4
+        uses: actions/upload-artifact@v5.0.0
         with:
-         name: newman-report   
-         path: newman
+         name: Newman report
+         path: newman/*.html
+        
+        
+             
+     
 
 
 
