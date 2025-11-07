@@ -39,8 +39,8 @@ jobs:
         if: always() # its ensure the archive section going to be executed wehther prevous steps failed 
         uses: actions/download-artifact@v6.0.0
         with:
-          name: newman report
-          path: newman/*.html
+          name: newman-report
+          path: newman
           
        
        
