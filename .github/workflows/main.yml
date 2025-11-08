@@ -56,11 +56,11 @@ jobs:
           
           SMTP server address: smtp.gmail.com 
           SMTP server port: 465
-          username: ${{secrets.EMAIL_EMAIL_USERNAME }}
+          username: ${{secrets.EMAIL_USERNAME }}
           password: ${{ EMAIL_PASSWORD }}
           subject: phoeinix inwarrenty flow Test Execution notification 
           to: jigarkanaiyalal@gmail.com
-          from: ${{secrets.EMAIL_EMAIL_USERNAME }}
+          from: ${{secrets.EMAIL_USERNAME }}
           body: |
                 Hello,
                 phoenix inwaarenty flow test has been executed. the report has been publishd and the URL 
