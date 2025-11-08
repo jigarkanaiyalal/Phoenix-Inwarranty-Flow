@@ -65,7 +65,7 @@ jobs:
           from: ${{ secrets.EMAIL_USERNAME }}
           body: |
                 Hello,
-                phoenix inwaarenty flow test has been executed. the report has been publishd and the URL 
+                phoenix inwarenty flow test has been executed. the report has been publishd and the URL 
                 is: https://jigarkanaiyalal.github.io/Phoenix-Inwarranty-Flow/
                 
                  
